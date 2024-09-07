@@ -1,0 +1,25 @@
+/* Gaya untuk tombol dengan ikon */
+.btn-icon {
+    position: relative; /* bulatan */
+    padding: 0; /* pading tombol */
+    border: none; 
+    background: transparent; 
+}
+
+/* Gaya untuk bulatan putih di belakang ikon */
+.btn-icon i {
+    position: relative; /* biar posisi bulat bener */
+    padding: 10px; /* pading sekitar bulatan */
+    border-radius: 50%; /* Membuat bulatan */
+    background-color: white; /* Warna bulatan putih */
+    color: #6B9BF5; /* Warna ikon */
+    display: inline-flex; /* icon dan bulat bersatu */
+    align-items: center; /* icon tengah */
+    justify-content: center; /* ikon ditengah */
+    font-size: 1.25rem; 
+}
+
+/* Tambahkan shadow atau efek tambahan jika diinginkan */
+.btn-icon i {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

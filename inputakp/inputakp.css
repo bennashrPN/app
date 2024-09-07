@@ -1,0 +1,17 @@
+.table-responsive {
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
+}
+
+.loading i {
+    font-size: 2rem;
+    color: #007bff; /* Sesuaikan warna sesuai tema */
+}

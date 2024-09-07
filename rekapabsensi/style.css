@@ -1,0 +1,20 @@
+/* Gaya CSS untuk tampilan auto-complete */
+.autocomplete-list {
+    position: absolute; /* Posisi absolut agar daftar muncul tepat di bawah input */
+    z-index: 9999; /* Z-index tinggi untuk memastikan daftar saran di atas elemen lainnya */
+    background-color: #fff; /* Warna latar belakang putih */
+    border: 1px solid #ccc; /* Batas abu-abu */
+    max-height: 200px; /* Tinggi maksimum daftar */
+    overflow-y: auto; /* Tampilkan scrollbar vertikal jika daftar melebihi tinggi maksimum */
+    width: calc(100% - 4px); /* Lebar sama dengan lebar input */
+    margin-top: 4px; /* Jarak sedikit dari elemen input */
+}
+
+.autocomplete-item {
+    padding: 8px; /* Ruang dalam di setiap item saran */
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover */
+}
+
+.autocomplete-item:hover {
+    background-color: #f0f0f0; /* Warna latar belakang saat hover */
+}

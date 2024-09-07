@@ -1,0 +1,7 @@
+body {
+    background-color: #f5f5f5;  
+}
+.slide-container {
+    max-height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+    overflow-y: auto;
+}

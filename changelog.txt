@@ -1,0 +1,479 @@
+11/06/24
+
+[mysqld]
+- ada penambahan di sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+wait_timeout = 28800
+interactive_timeout = 28800
+
+Edit 
+selected disabled add tabel jadwal pelajaran 
+selected disabled add user
+selected disabled input absensi
+
+
+12/06/24
+add waktu indo
+sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf
+[mysqld]
+default-time-zone = '+07:00'
+mysql
+sudo mysql -u root -p
+SET GLOBAL time_zone = '+07:00';
+SET time_zone = '+07:00';
+selected disabled pilih kelas perizinan 
+test login as guru status aktif
+test absen as guru harian aktif
+test download rekap absensi status aktif
+test login as admin status aktif
+input absensi double check db dan notif aktif 
+add  unabsented_found tidak ada jadwal pelajaran hari ini 
+add  unabsented_found semua pelajaran hari ini sudah diabsen
+Fixing error while edit pelajaran tabel guru belum absen berubah jadi tidak ada jadwal pelajaran padahal ada pelajaran
+a hreff santri hadir, izin ,sakit , alpha
+add nota button autoabsensi
+
+13/06/24
+test login as guru 
+test login as admin 
+layouting note button 
+add modal note
+js baru simpan di console not yet ke db
+fixing error button id name 
+konek note kelas ke db
+fixing error <ul> and <ol> 
+must only directly contain <li>, <script> or <template> elements  <ol class="breadcrumb mb-4">
+<li class="breadcrumb-item active">
+aria-hidden="true"> ke aria-hidden="false">
+fix error Links must have discernible text: Element has no title attribute
+<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+<a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Links must have discernible text: Element has no title attribute
+<a href="#" data-bs-toggle="modal" data-bs-target="#mdlNoteKelas" class="btn btn-sm btn-warning float-end me-1 text-white" name="note" id="note"> <a href="#" data-bs-toggle="modal" data-bs-target="#mdlNoteKelas" class="btn btn-sm btn-warning float-end me-1 text-white" name="note" id="note">
+<i class="bi bi-sticky-fill"></i>
+</a><i class="fas fa-user fa-fw"></i>
+- '-webkit-text-size-adjust' is not supported by Chrome, Chrome Android, Edge 79+, Firefox, Safari. Add 'text-size-adjust' to support Chrome 54+, Chrome Android 54+, Edge 79+.
+-body {
+    -webkit-text-size-adjust: 100%;
+}
+fix error 'text-align: -webkit-match-parent' is not supported by Edge, Safari, Safari on iOS. Add 'text-align: match-parent' to support Edge 79+. hal 325 css-sbadmin
+'text-decoration-skip-ink' is not supported by Firefox for Android. hl 173
+A 'cache-control' header is missing or empty. httaccess 8-15
+
+
+15/06/24
+menambahkan version di style dan script di header dan footer 
+httacess update
+debugging
+
+20/06/24
+add query pengecekan tanggal sudah absen di dashboard guru
+add script dan link datatables baru di header /dh dihapus
+ganti id datatablessimpel ke exampelAbsen di autoabsensi
+kasih komen script loadstatus autoabsensi
+rapihkan script js autoabsensi
+menambahkan script dan css dari web https://www.fundaofwebit.com/post/how-to-integrate-datatables-and-use-datatables-in-bootstrap-5
+mengahpus datatables script dan css lama dan pasang script baru dari datatables.net
+debugging page dashboard guru
+tambah icon download pdf di dashboard admin
+menambnabn index <?php echo $index; ?> dan index++ loop dashboard guru
+
+21/06/24
+add new fitur download kelas belum absen 
+change color download kelas belum absen
+add button edit autoabsensi
+add modal mdlEditabsen untuk edit absen
+
+note
+1 . Alert for login failure not yet fixed. 
+2 . Teacher alert for time over not yet fixed.
+3 . Arrangement of buttons, commands, charts, and tables not yet fixed.
+4 . Debugging all pages not yet fixed.
+5 . Hiding buttons, hyperlinks, and .htaccess settings to allow page access not yet fixed.
+6 . Staff dashboard not yet fixed.
+7 . teacher dashboard not yet fixed.
+8 . Employee data not yet fixed.
+9 . Script for load status not yet fixed.
+10. Graphics and charts not yet fixed.
+11. Update for student page not yet fixed.
+14 . autocomplite base on data santri not yet fixed.
+15 . dashboard admin - data not real not yet fixed.
+16 . add perizinan > guru izin dan guru pengganti ( Khidmad )
+17 . Santri izin, hadir ,sakit , Alpha excel 
+18 . data presensi agenda pembelajaran di input presensi
+19 . 
+
+
+26/07/24
+1 . session belum final
+2 . Jam selesai belum final
+3 . Edit Absen belum 
+
+22/06/24
+backup server
+
+06/07/24
+1 . alret login failure sukses
+2 . dashboard guru 
+Changes:
+Removed duplicate $query_jadwal.
+Added a separate error handling approach.
+Ensured better code organization and readability.
+Moved repetitive code to functions to reduce duplication.
+
+08/07/24
+##fixed
+1 . tryin to integrate datatable tbl_guru and tbl_jadwalpelajaran , diurungkan karena lebih safety .
+2 . edit lengthmenu autoabsensi 
+3 . 
+
+##tambahan
+09/07/24
+1 . add edit/update autoabsensi
+
+##add
+1 . add modealeditabsensi autoabsensi
+
+
+#add 
+akses izin staff input absensi 
+
+
+##add
+1 . add mts belum absen dan santri izin tbl perizinan dashboard Staff
+tips 
+
+22/07/24
+##add
+1 . fitur agenda kegiatan pembelajaran 
+2 . add fitur info whatsapp
+
+24/07/24
+##Added
+1 . add fitur kegiatan pembelajaran
+
+##Fixing
+1 . kolom file pdf belum presensi
+
+26/07/24
+##Removed
+Info perkembangan dash staf 
+Add-akp
+
+27/07/24
+## bikin tutorial 
+ganti absensi ke presensi
+
+
+28/07/24
+
+##edit
+Absen ke presensi
+
+
+
+30/07/24
+user 
+1  ganti nama dan gelar rizal
+2 . cek jadwal uus 
+3 . ganti jadwal semester gasal
+4 . Jadawal ujang mulya
+5 . design sidebar
+
+31/07/24
+1 . css guru 
+2 . ubah nama gelar ustadz abud
+3 . gradient nama staff
+4 . gradient nama guru
+5 . tambah jabatan 
+6 . add foto 
+7 . add folder grafik
+8 . ganti icon togle baru
+9 . add home dashboard
+10 . status online / belum interaktif
+11 .  
+
+
+01/08/24
+
+1 . bantu user buldan
+2 . bantu user u ridwan
+3 . bantu user yusuf jaenudin
+4 . bantu user imam suudi
+5 . bantu user aleng
+6 . bantu user mukhsin
+7 . add user mfirdaus
+8 . add user guru pengganti
+9 . ganti value kelas add izin
+10 .  
+
+02/08/24
+1 . add side bar perizinan 
+2 . add santri izin
+3 . add ustadz izin  
+4 . ganti santri izin 
+5 . bantu user asep
+6 . bantu user yunan
+7 . bantu user 20
+8 . add jabatan user imam
+9 . Bantu user Agung 
+10 . add form jabatan
+11 . add edit jabatan
+12 . add delete jabatan
+13 . edit jabatan
+14 . delete jabatan
+15 . edit jabatan user
+16 . sort tabel presensi
+17 . add guru berdasakan login 
+
+03/08/24
+1 . bantu user lutfi 
+2 . bantu user input 8 santri izin 
+3 . echo '<strong>' . $kehadiran . '</strong>
+4 . Edit jenjang di jadwal pelajaran 
+5 . bantu user dimas 
+6 . add style info kelas
+7 . window.location.href = '" . htmlspecialchars($main_url) . "dashboard/dashboard-" . strtolower(htmlspecialchars($_SESSION['role'])) . ".php'; 
+8 . bantu user yudhit
+
+4/08/24
+1 . buat logika baru laporan dashboard  admin total kehadiran
+2 . rapihkan autoabsensi
+3 . benarkan kode js modal edit dan keterangan 
+4 . instal openvpn
+5 , Ubah jadwal user aleng dan jaenudin
+6 . desain ulang staf dashboard
+7 . edit sidebar data akp
+
+05/08/24
+1 . edit sidebar data akp
+2 . tambah akp
+3 . bantu input santri izin
+4 . add jenjang izin
+5 . auto jenjang izin perizinan
+6 . edit perizinan 
+7 . fixing edit perizinan jenjang dan kelas
+8 . add fitur download pdf mts izin 
+9 . change user arif
+10 . add uks dashboard
+11 . add download gambar
+
+06/08/24
+1 . Add autocomplit perizinan
+2 . Add autocomplite base on session
+3 . Sort tabel perizinan 
+5 . add user tatang 
+6 . buat tutorial input santri izin
+7 . add duplicate perizinan info
+8 . input data user ujang mulya 
+9 . bantu input santri izin 13 santri
+10 . add now upDate tbl_perizinan
+11 . edit nama bank account 
+12 . edit nama kegiatan pembelajaran ke bankDataAkp
+13 . bantu user ichsan tutorial
+14 , bantu user rohman edit jadwal  
+
+07/08/24
+1 . bantu user uus
+2 . bantu user dimas 
+3 . bantu update user aleng
+4 . bantu download png santri izin
+5 . lebar div
+6 . inf kehadiran di grup
+7 . add info text dasboard admin
+8 . train kode fetch data autoabsensi
+
+08/08/24
+1 . add autocomplit agenda kegiatan pembelajaran
+2 . trying to fix tbl_agendakegiatan 
+3 . bantu user rahman input 3 pelajaran
+4 . recording fitur baru
+5 . delete akp dari sidebar
+6 . css akp 
+7 . add href bankDataAkp
+8 . add data akp
+9 . add edit akp
+
+
+09/08/24
+1 . add log 
+2 . add santri home link santri izin
+3 . add home link perizinan 
+3 . edit log
+4 . tabel log
+5 . add log di edite perizinan 
+6 . bantu user abdullah
+7 . bantu user agung 
+8 . bantu user munaji 
+9 . bantu user arif
+10 . bantu user rusli
+11 . tutorial input bank data akp 
+12 . bantu user Mochammad Syaepul Bahtiar, M.Pd 
+13 . add hari data akp
+14 . add update date data akp
+15 . updateData on currenttimestamp
+16 . backup Data
+
+
+10/08/24
+1 . server stuck 07:18 vm  tidak load semua kode ubuntu
+2 . add upload 
+3 . add spreadsheet
+4 . add process upload
+5 . add msg
+6 . deplou akp upload ke server
+7 . recording upload bank data akp 
+
+12/08/24
+1 . cek log 
+2 . atur ulang logika upload dan tampilan agenda kegiatan
+3 . add session add akp pelajaran
+4 . add session add akp kelas
+5 . add DESC data bank AKP
+6 . add sort  
+7 . add duplicate excel
+8 . edit autoabsensi
+9 . edit 
+
+13/08/24
+1 . add progress bar hudhuur
+2 . bantu user munaji
+3 . add info bank data akp
+4 . add info upload akp
+5 . remove online status dashboard guru
+6 . add progress bar
+7 . logika hitung progress bar 
+8 . add gradient progrees bar
+9 . add host ke qorkbench mysql  
+10 . update foto user mukhsin
+11 . fixing a href home dashboard add akp
+12 . fixing link bank data akp di add akp 
+13 . backup database www dan mysql
+14 . 
+
+14/08/24
+1 . add gambar favicon
+2 . add lenght texarea perizinan
+3 . buat sid 
+4 . bantu user Syaepul
+5 . bantu user denie
+6 . add form izin ustadz
+7 . add proses izin ustad
+
+15/08/24
+1 . add proses izin ustadz
+2 . add msg izin ustadz
+3 . add izin ustadz
+4 . add waktu mulai waktu selesai
+5 . bantu user ujang mulya
+6 . bantu user lugina
+7 . lanjut s.id 
+8 . bantu user ajat
+9 . bantu user khobir 
+10 . bantu user yahya
+
+16/08/24
+1 . add maxleght perizinan
+2 . bantu user arif 
+3 . ubah deskripsi progress hudhuur 
+4 . add form edit izin ustadz
+5 . add update di form proses izin ustadz 
+6 . add select2 add izin ustadz
+
+17/08/24
+1 . edit deskripsi bank data akp
+2 . upacara 
+3 . 
+
+19/08/24
+1 . bantu user abud
+2 . add select2 add ustadz izin 
+3 . bantu user adm s.id 
+4 . bantu user septi 
+5 . ganti format waktu jadi h:i
+6 . sort jam dan hari di generate pdf jadwal ustadz 
+7 . sort jadwal dasboard guru
+
+20/08/24
+1 . bantu user kesantrian input santri izin kamar madinah
+2 . edit s.id 
+3 . fixing presntase inputan 
+4 . bantu user ujang
+5 . input akp
+6 . input santri izin sakit 
+7 . fixing data prrsensi hudhuur
+8 . add input akp 
+9 . form input akp 
+10 . edit tbl_kelas
+11 . remove tbl_kelas production
+
+21/08/24
+1 . bantu user muslim
+2 . add script del inputakp
+3 . edit input akp
+4 . proses ipdate input akp
+5 . delete inputakp
+6 . 
+
+22/08/24
+1 . revisi kode ustadzizin
+2 . revisi prosesizinustadz 
+3 . revisi edit ustadz 
+4 . buat kode izin akses guruganti
+
+23/08/24
+1 . update foto yahya
+2 . debug izin ustadz 
+3 . debug guruizin dan guruganti
+
+24/08/24
+1 . guruizin 
+2 . fixing adn debuging izinustadz
+3 . bantu user aziz
+4 . edit waktumulai dan waktuselesai izin 
+
+26/08/24
+1 . edit waktumulai dan waktuselesai izin ustadz
+2 . add logika waktu izin dan selesai izin ustadz 
+3 . fixing waktumulai dan selesai tbl izin guru 
+4 . fixing status absen  untuk guru ganti 
+5 . backup localhost
+
+27/08/24
+1 . berkutuat di halaman guruganti searching for cara untuk fixing 
+2 . backup localhost
+
+28/08/24
+1 . backup server 
+2 . menambahkan form tambah akp ke production 
+3 . tambah mysql akp 
+4 . ubah jadwal pelajaran
+5 . input apk server side  
+6 . load data animation 
+7 . sort tanggal get_data_akp 
+8 . add izinguru sql ke production 
+
+29/08/24
+1 . code optimization
+2 . side baru guru
+3 . add home inputakp
+4 , add bulan get_data_akp
+
+30/08/24
+1 . atur ulang logika prosesimpan absen (autoabsensi)
+2 . handel input dari form1 dan form2
+3 . proses upload excel akp 
+tips 
+# alur cek error
+1 . Data tidak masuk . cek inputan data apakah sudah sesuai atau belum , cek database apakah sudah ada atau belum , 
+    cek kode . ( tidak boleh langsung merubah kode !)
+2 . tiga kali cek kalo ada dta yang belum masuk , jagan langsung ganti db atau edit dll
+3 . atur agar edit di text area tidak ketengah pas edit cek di form edit-izinustadz
+4 . kalo pake cdn plugin biasanya nunggu dulu 
+5 .  msg singkat ada di upload akp 
+7 . kalo header bermasalah pake ob_start(); - ob_end_clean();
+8 . saat buat file edit perhatikan datanya yang diambil dari tabel itu apakaha namanay kolomnya sesuai ?
+9 . kalo pusing kenapa ngak muncul misal status absesn tidak muncul di halam guru ganti tapi muncul di halaman guru izin
+kasih debuging kode seprti ini 
+<select class="form-select" id="inlineFormSelectStatus" onchange="setStatusColor(this); setStatusIcon(this);" aria-label="Default select example">
+10 . kalo ada error tanya gpt terus identifikasi masalahnya dimana baru kamu cari caranya 
+11 . loadi data dan server side bagus di halaman inputakp 
